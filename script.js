@@ -1,17 +1,15 @@
-var t = 20;
-var g = 10;
 var s = '';
 
-for(var i = 1; i <= t; i++){
-    if( i <= g ){
-        for( var h = 0; h < i; h++){
-                s += '*';
-        }
-    }else{
-        for( var y = 20; y > i; y--){
-                s += '*';
-        }
+for(var i = 1; i <= 5; i++){
+    for(y = 5; y >= i; y--){
+        s += ' ';
+    }
+    for(b = 1; b <= i+(i-1); b++){
+        s += '*'
     }
 s += '\n';
 }
 console.log(s);
+
+// 1. jumlah bintang +2 -> i + (i - 1)
+// 2. spasi = n - baris
