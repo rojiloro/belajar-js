@@ -1,24 +1,17 @@
 var s = '';
 
-for(var i = 1; i <= 5; i++){
-    for(y = 5; y > i; y--){
-        s += ' ';
+for(var i = 0; i < 8; i++){
+    for(var j = 0; j < 8; j++){
+        if( (i % 2 == 0 && j % 2 == 0) || ( i % 2 == 1 && j % 2 == 1) ){
+            s += '#';
+        }else{
+            s += ' ';
+        }
     }
-    for(b = 1; b <= i+(i-1); b++){
-        s += '*'
-    }
-s += '\n';
-}
-for(var i = 1; i <= 5; i++){
-    for(y = 1; y <= i; y++){
-        s += ' ';
-    }
-    for(b = 7; b >= i+(i-1); b--){
-        s += '*';
-    }
+
 s += '\n';
 }
 console.log(s);
 
-// 1. jumlah bintang +2 -> i + (i - 1)
-// 2. spasi = n - baris
+// 1. baris pertama 10 karakter (# dan spasi)
+// 2. baris kedua 10 karakter (spasi dan #)
