@@ -1,17 +1,26 @@
-var s = '';
+var x = new Array();
+var input = prompt('Masukan nilai x = ');
 
-for(var i = 0; i < 8; i++){
-    for(var j = 0; j < 8; j++){
-        if( (i % 2 == 0 && j % 2 == 0) || ( i % 2 == 1 && j % 2 == 1) ){
-            s += '#';
-        }else{
-            s += ' ';
+for( i = 1; i <= input; i++){
+    x[i] = new Array();
+    for( j = 1; j <= i; j++){
+        if( j == 1 || j == i){
+            x[i][j] = 1;
+        }
+        else{
+            x[i][j] = x[i-1]+x[i-1][j];
         }
     }
-
-s += '\n';
 }
-console.log(s);
-
-// 1. baris pertama 10 karakter (# dan spasi)
-// 2. baris kedua 10 karakter (spasi dan #)
+for ( i = 1; i <= input; i++){
+    /*for( g = input; g > input; g--){
+        document.write(" ");
+    }*/
+    for( j = 1; j <= i; j++){
+        document.write(x[i][j]+'');
+    }
+    document.write("<br>");
+}
+//pola segitiga pascal adalah segitiga yang bentuknya
+// setiap baris diawali dengan 1. dan angka ditengah
+// akan ditambahkan dengan angka yang di sebelah kirinya
