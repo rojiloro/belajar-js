@@ -1,0 +1,7 @@
+// muncul hasil (terlalu rendah, terlalu tinggi) dan muncul peluang kesempatan
+// jika benar maka keluar angka yang disimpan komputer, dan jika kondisi benar maka muncul alert terimakasih
+// jika kesempatan habis maka muncul alert kesempatan habis dan anda gagal dan memunculkan angka yang dicari
+
+jika player menebak angka yang benar maka muncul "anda benar \n angka yang dicari adalah (hasil)"
+jika player menebak angka kurang dari hasil maka muncul terlalu rendah
+jika player menebak angka lebih dari hasil maka muncul terlalu tinggi
