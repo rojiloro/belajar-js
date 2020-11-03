@@ -1,13 +1,16 @@
-// menghitung 2 buah volume kubus
-function jumlahVolumeDuaKubus(a, b){
-    var total, v1, v2;
-    
-    v1 = a * a * a;
-    v2 = b * b * b;
-
-    total = v1 + v2;
-    return total;
+function tambah(){
+    var hasil = 0;
+    for( var i = 0; i < arguments.length; i++){
+        hasil += arguments[i];
+    }
+    return hasil;
 }
 
-alert(jumlahVolumeDuaKubus(8, 3));
-alert(jumlahVolumeDuaKubus(5, 2));
+// function kali(a,b) {
+//     return a * b;
+// }
+
+// var a = parseInt(prompt('Masukan nilai 1:'));
+// var b = parseInt(prompt('Masukan nilai 2:'));
+var hasil = tambah(4,5,12,10,9);
+console.log(hasil);

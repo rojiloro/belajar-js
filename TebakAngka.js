@@ -37,20 +37,22 @@
     var hasil = '';
     // menentukan rules
 
-    
     for( var kesempatan = 3; kesempatan >= 0; kesempatan--){
-        var p = prompt('Masukan angka 1-10 : ');
-        if (p == comp){
-            hasil = 'Anda benar \n angka yang dicari adalah '+comp;
-            kesempatan = 0;
-        }else if(p < comp){
-            hasil = 'Terlalu RENDAH \n anda mempunyai ' +kesempatan+' kesempatan';
-        }else if(p > comp){
-            hasil = 'Terlalu TINGGI \n anda mempunyai ' +kesempatan+ ' kesempatan';
+        if(kesempatan != 0){
+            var p = prompt('Masukan angka 1-10 : ');
+            if (p == comp){
+                hasil = 'Anda benar \n angka yang dicari adalah '+comp;
+                kesempatan = 0;
+            }else if(p < comp){
+                hasil = 'Terlalu RENDAH \n anda mempunyai ' +kesempatan+' kesempatan';
+            }else if(p > comp){
+                hasil = 'Terlalu TINGGI \n anda mempunyai ' +kesempatan+ ' kesempatan';
+            }else{
+                hasil = 'Angka yang anda masukan salah';
+            }
         }else{
-            hasil = 'Angka yang anda masukan salah';
+            hasil = 'Anda gagal, angka yang anda cari adalah '+comp;
         }
-    
 
     // menampilkan hasil
     alert(hasil);
