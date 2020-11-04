@@ -1,9 +1,19 @@
-// global scope window scope
-var a = 1;
-
-function tes(a) {
-    console.log(a);
+function cetakAngka(n) {
+    if(n === 0){
+        return;
+    }
+    console.log(n);
+    cetakAngka(n-1);
 }
 
-tes(a);
-console.log(a);
+cetakAngka(10);
+
+
+function faktorial(a) {
+    
+    if(a === 0) return 1;
+
+    return a * faktorial(a-1);
+}
+
+console.log (faktorial(5));
