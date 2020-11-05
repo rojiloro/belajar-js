@@ -1,5 +1,4 @@
-var tampilNama = function (nama) {
-    alert('haii, saya '+nama);
-}
+var hari = [];
+hari = ['ahad','senin','selasa','rabu','kamis','jumat','sabtu'];
 
-tampilNama('oji');
+console.log(hari.length);
